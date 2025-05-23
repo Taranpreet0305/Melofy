@@ -6,20 +6,18 @@
 }
 
 body, html {
-    display: flex;
+				display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background: #333
+    background-color: #111;
     overflow-x: hidden;
 }
 
 .tile {
     width: 100%;
-    flex-grow: 1;
+				flex-grow: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -42,10 +40,8 @@ body, html {
     animation: popIn 0.8s ease-out;
 }
 
-h1{
+nav {
     display: flex;
-    color: #fff;
-    font-family:'Times New Roman', Times, serif;
     justify-content: space-between;
     margin-bottom: 25px;
 }
@@ -147,13 +143,11 @@ h1{
 }
 
 .footer {
-    text-align: right;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 1rem;
-    font-size: 1.2rem;
-    color: #655858;
-    margin-top: 20px;
-    font-weight: 500;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.9rem;
 }
 
 @keyframes spin {
