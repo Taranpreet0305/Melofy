@@ -40,9 +40,10 @@ body, html {
     animation: popIn 0.8s ease-out;
 }
 
-nav {
+h1{
     display: flex;
     justify-content: space-between;
+				color:#fff;
     margin-bottom: 25px;
 }
 
