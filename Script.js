@@ -47,7 +47,7 @@ function loadSong(index) {
     songName.textContent = song.name;
     audio.src = song.file;
     songCover.src = song.cover;
-   document.body.style.backgroundImage=`url(${song.cover}) center/cover no-repeat`;
+    tile.style.background = `url(${song.cover}) center/cover no-repeat`;
     audio.load();
     audio.onloadedmetadata = () => {
         progress.max = audio.duration;
