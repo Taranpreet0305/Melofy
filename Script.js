@@ -7,13 +7,14 @@ let songName = document.getElementById("song-name");
 let songCover = document.getElementById("song-cover");
 let tile = document.getElementById("tile");
 
-const songs = [
+const songs = 
+[
     {
         name: "Perfect",
         file: "Media/Perfect.mp3",
         cover: "Media/Perfect-Song-Cover.jpg"
     },
-        {
+    {
         name: "Dekha Hazaro Daffa",
         file: "Media/Dekha-Hazaro-Dafaa.mp3",
         cover: "Media/dekha-hazaro-daffa-cover.jpg"
@@ -41,8 +42,8 @@ const songs = [
 ];
 
 let currentSongIndex = 0;
-
-function loadSong(index) {
+function loadSong(index) 
+{
     const song = songs[index];
     songName.textContent = song.name;
     audio.src = song.file;
@@ -56,30 +57,37 @@ function loadSong(index) {
     PlayPause();
 }
 
-function formatTime(time) {
+function formatTime(time) 
+{
     let min = Math.floor(time / 60);
     let sec = Math.floor(time % 60).toString().padStart(2, '0');
     return `${min}:${sec}`;
 }
 
-function PlayPause() {
-    if (audio.paused) {
+function PlayPause() 
+{
+    if (audio.paused) 
+    {
         audio.play();
         ctrl_icon.classList.add("fa-pause");
         ctrl_icon.classList.remove("fa-play");
-    } else {
+    } 
+    else 
+    {
         audio.pause();
         ctrl_icon.classList.remove("fa-pause");
         ctrl_icon.classList.add("fa-play");
     }
 }
 
-function nextSong() {
+function nextSong() 
+{
     currentSongIndex = (currentSongIndex + 1) % songs.length;
     loadSong(currentSongIndex);
 }
 
-function prevSong() {
+function prevSong() 
+{
     currentSongIndex = (currentSongIndex - 1 + songs.length) % songs.length;
     loadSong(currentSongIndex);
 }
@@ -89,10 +97,10 @@ setInterval(() => {
     current_time.textContent = formatTime(audio.currentTime);
 }, 500);
 
-progress.onchange = function () {
+progress.onchange = function () 
+{
     audio.currentTime = progress.value;
     PlayPause();
 };
 
-// Initial load
 loadSong(currentSongIndex);

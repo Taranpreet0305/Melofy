@@ -1,23 +1,26 @@
-* {
+* 
+{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
-body, html {
-				display: flex;
+body, html 
+{
+    display: flex;
     flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: #111;
     overflow-x: hidden;
 }
-
-.tile {
+.tile 
+{
     width: 100%;
-				flex-grow: 1;
+    flex-grow: 1;
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -26,8 +29,8 @@ body, html {
     background: linear-gradient(135deg, #1f1c2c, #928dab);
     animation: fadeIn 1s ease-in-out;
 }
-
-.player {
+.player 
+{
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(20px);
     width: 100%;
@@ -39,15 +42,16 @@ body, html {
     transition: all 0.3s ease-in-out;
     animation: popIn 0.8s ease-out;
 }
-
-.player h1{
+h1
+{
     display: flex;
+    color: #fff;
+    font-family:'Times New Roman', Times, serif;
     justify-content: space-between;
-				color:#fff;
     margin-bottom: 25px;
 }
-
-.round {
+.round 
+{
     border-radius: 50%;
     width: 40px;
     height: 40px;
@@ -61,12 +65,12 @@ body, html {
     cursor: pointer;
     transition: transform 0.3s;
 }
-
-.round:hover {
+.round:hover 
+{
     transform: scale(1.1);
 }
-
-.Song-Cover {
+.Song-Cover 
+{
     width: 220px;
     height: 220px;
     object-fit: cover;
@@ -75,16 +79,16 @@ body, html {
     box-shadow: 0 15px 60px rgba(255, 26, 26, 0.22);
     animation: spin 30s linear infinite;
 }
-
-.player h2 {
+.player h2 
+{
     font-size: 22px;
     font-weight: 600;
     color: #fff;
     margin-top: 20px;
     animation: fadeIn 1s ease;
 }
-
-#progress {
+#progress 
+{
     -webkit-appearance: none;
     width: 100%;
     height: 8px;
@@ -93,8 +97,8 @@ body, html {
     cursor: pointer;
     margin: 30px 0;
 }
-
-#progress::-webkit-slider-thumb {
+#progress::-webkit-slider-thumb 
+{
     -webkit-appearance: none;
     background: #fff;
     width: 20px;
@@ -103,22 +107,22 @@ body, html {
     border: 4px solid #f53192;
     box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
 }
-
-.time {
+.time 
+{
     display: flex;
     justify-content: space-between;
     font-size: 14px;
     color: #ddd;
     margin-bottom: 10px;
 }
-
-.control {
+.control 
+{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.control div {
+.control div 
+{
     width: 60px;
     height: 60px;
     margin: 0 10px;
@@ -132,47 +136,68 @@ body, html {
     cursor: pointer;
     transition: transform 0.3s ease;
 }
-
-.control div:hover {
+.control div:hover 
+{
     transform: scale(1.1);
 }
-
-.control div:nth-child(2) {
+.control div:nth-child(2) 
+{
     transform: scale(1.3);
     background: #f53192;
     color: #fff;
 }
-
-.footer {
-    background-color: #222;
-    color: #fff;
+.footer 
+{
     text-align: center;
-    padding: 15px;
-    font-size: 0.9rem;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #655858;
+    margin-top: 20px;
+    font-weight: 500;
 }
-
-@keyframes spin {
-    from { transform: rotate(0deg); }
-    to   { transform: rotate(360deg); }
+@keyframes spin 
+{
+    from 
+    { 
+        transform: rotate(0deg); 
+    }
+    to   
+    { 
+        transform: rotate(360deg); 
+    }
 }
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to   { opacity: 1; transform: translateY(0); }
+@keyframes fadeIn 
+{
+    from 
+    { 
+        opacity: 0; transform: translateY(20px); 
+    }
+    to   
+    { 
+        opacity: 1; transform: translateY(0); 
+    }
 }
-
-@keyframes popIn {
-    from { transform: scale(0.8); opacity: 0; }
-    to   { transform: scale(1); opacity: 1; }
+@keyframes popIn 
+{
+    from 
+    { 
+        transform: scale(0.8); opacity: 0; 
+    }
+    to   
+    { 
+        transform: scale(1); opacity: 1; 
+    }
 }
-
-/* Responsive Design */
-@media (max-width: 500px) {
-    .Song-Cover {
+@media (max-width: 500px) 
+{
+    .Song-Cover 
+    {
         width: 180px;
         height: 180px;
     }
-    .player h2 {
+    .player h2 
+    {
         font-size: 18px;
     }
 }
