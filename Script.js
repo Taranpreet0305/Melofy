@@ -36,7 +36,7 @@ const songs = [
     {
         name: "Yadav brand 2",
         file: "Media/Yadav-Brand2.mp3",
-        cover: "Media/AnotherSongCover.jpg"
+        cover: "Media/Yadav-Brand2-Cover.jpg"
     }
 ];
 
