@@ -23,10 +23,10 @@ _Experience the music player in your browser instantly._
 ## 📸 Screenshots
 
 ### Desktop View
-![Melofy Desktop Screenshot](https://raw.githubusercontent.com/taranpreet-singh/melofy/main/assets/melofy-desktop.png)
+![Melofy Desktop Screenshot](.Media/melofy-desktop.jpg)
 
 ### Mobile View
-![Melofy Mobile Screenshot](https://raw.githubusercontent.com/taranpreet-singh/melofy/main/assets/melofy-mobile.png)
+![Melofy Mobile Screenshot](.Media/melofy-mobile.jpg)
 
 
 ---
